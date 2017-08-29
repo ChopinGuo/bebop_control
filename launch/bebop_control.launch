@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="camera_info_url" default="$(find bebop_driver)/data/bebop2_low_camera_calib.yaml" />
+  <node name="bebop_control" pkg="bebop_control" type="bebop_gui" output="screen">
+    <param name="camera_calib_path" type="string" value="$(arg camera_info_url)" />
+  </node>
+</launch>

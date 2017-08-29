@@ -1,0 +1,37 @@
+%YAML:1.0
+image_width: 1280
+image_height: 720
+camera_name: bebop_front
+camera_matrix: !!opencv-matrix
+  rows: 3
+  cols: 3
+  dt: d
+  data: [795.048591, 0.000000, 646.222032, 0.000000, 799.242851, 342.301144, 0.000000, 0.000000, 1.000000]
+distortion_model: plumb_bob
+distortion_coefficients: !!opencv-matrix
+  rows: 1
+  cols: 5
+  dt: d
+  data: [0.020354, -0.023074, -0.003956, 0.003006, 0.000000]
+rectification_matrix: !!opencv-matrix
+  rows: 3
+  cols: 3
+  dt: d
+  data: [1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000]
+projection_matrix: !!opencv-matrix
+  rows: 3
+  cols: 4
+  dt: d
+  data: [798.148071, 0.000000, 650.714747, 0.000000, 0.000000, 804.509460, 338.757587, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000]
+
+template: !!opencv-matrix
+  rows: 4
+  cols: 3
+  dt: d
+  data: [-30, -30, 0,
+          30, -30, 0,
+          30,  30, 0,
+         -30,  30, 0]
+
+p_linear: 0.7
+p_angular: 1.0
